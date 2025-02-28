@@ -1,0 +1,129 @@
+#to print the factorial of the number
+import math
+def factorial(n):
+    x=math.factorial(n)
+    print(x)
+factorial(4)
+
+#to add all the numbers in the given tuples
+def add(a,*b):
+    c=a
+    for i in b:
+        c=c+i
+    print(c)
+
+add(3,2,5,6)
+
+def person(name,**data):
+    print(name)
+    for i,j in data.items():
+        print(i,j)
+ 
+person("pooja",age=20,city='gadag',mob=1323456)
+
+#to count the even and odd numbers in the given list
+def count(list):
+    even=0
+    odd=0
+    for i in list:
+        if i%2==0:
+            even+=1
+        else:
+            odd+=1
+    return even,odd
+list=[23,45,60,24,56]
+even,odd=count(list)
+print(even)
+print(odd)
+
+#to find the fibonacci of the number
+def fibonacci(n):
+    a=0
+    b=1
+    print(a)
+    print(b)
+    
+    for i in range(2,n):
+        c=a+b
+        a=b
+        b=c
+        print(c)
+fibonacci(10)
+#using user input
+def fibonacci():
+    n=int(input("Enter the number"))
+    a=0
+    b=1
+    if n<0:
+        print('infinity')
+    else:
+        print(a)
+        print(b)
+    
+    for i in range(2,n):
+        c=a+b
+        a=b
+        b=c
+        print(c)
+fibonacci()
+
+#to find the factorial of the number
+import math
+def facto():
+    n=int(input("Enter the number"))
+    x=math.factorial(n)
+    print(x)
+facto()
+#using range function
+def fact():
+    f=1
+    for i in range(1,n+1):
+        f=f*i
+    return f
+n=int(input("Enter the number"))
+result=fact()
+print(result)
+
+#using recursion
+import sys
+sys.setrecursionlimit(2000)
+print(sys.getrecursionlimit())
+i=0
+def greet():
+    i+=1
+    print("hello",i)
+    greet()
+greet()
+
+#factorial using recursion
+def fact(n):
+    if n==0:
+        return 1
+    else:
+        return n*fact(n-1)
+result=fact(5)
+print(result)
+
+#lambda using anonymous function:
+**to add two numbers**
+x=lambda a,b:a+b
+r=x(2,5)
+print(r)
+**to find square of a number**
+x=lambda a:a*a
+r=x(5)
+print(r)
+
+# to find even nos in the list by using filter function:
+n=[2,3,5,6,7,8,5,8,9]
+evens=list(filter(lambda n:n%2==0,n))
+print(evens)
+**by using double and reduce function**
+from functools import reduce
+n=[2,3,5,6,7,8,5,8,9]
+evens=list(filter(lambda n:n%2==0,n))
+doubles=list(map(lambda n:n*2,evens))
+sum=reduce(lambda a,b:a+b,doubles)
+print(evens)
+print(doubles)
+print(sum)
