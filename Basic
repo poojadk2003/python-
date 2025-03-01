@@ -127,3 +127,46 @@ sum=reduce(lambda a,b:a+b,doubles)
 print(evens)
 print(doubles)
 print(sum)
+
+#creation of class and object
+class Computer:
+    def __init__(self,key,mouse):
+        self.key=key
+        self.mouse=mouse
+    def config(self):
+        print("Config is",self.key,self.mouse)
+com1=Computer('key1','mouse1')
+com2=Computer('key2','mouse2')
+com1.config()
+com2.config()
+
+#using constructor and updating the values and printing
+class Computer:
+    def __init__(self):
+        self.name="pooja"
+        self.age=21
+    def num(self):
+        print(self.name,self.age)
+p1=Computer()
+p2=Computer()
+p1.name='shree'
+p2.age=25
+p1.num()
+p2.num()
+
+
+#using constructor,self and updating the values with the help of update function
+class Computer:
+    def __init__(self):
+        self.name="pooja"
+        self.age=24
+    def update(self):
+        self.age=30
+c1=Computer()
+c2=Computer()
+c1.name='shree'
+c1.update()
+print(c1.name,c1.age)
+print(c2.name,c2.age)
+
+
