@@ -382,7 +382,16 @@ b1=C()
 s1=Student(45,67)
 print(s1.sum(2))
 
-
+#method overriding:
+class A:
+    def show(self):
+        print('A in show')
+        
+class B(A):
+    def show(self):
+        print('B in show')
+a1=B()
+a1.show()
 
 
 
