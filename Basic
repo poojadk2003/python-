@@ -341,6 +341,33 @@ class B(A):
 
 b1=B()
 
+#using MRO and super()
+class A:
+    def __init__(self):
+        print('in A init')
+    def feature1(self):
+        print('feature1')
+        
+    def feature2(self):
+        print('feature2')
+class B:
+    def __init__(self):
+        print('in B init')
+    def feature3(self):
+        print('feature3')
+        
+    def feature4(self):
+        print('feature4')
+class C(A,B):
+    def __init__(self):
+        super().__init__()
+        print('in C init')
+        def feature5(self):
+            print('feature5')
+b1=C()
+
+
+
 
 
 
