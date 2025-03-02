@@ -247,8 +247,83 @@ class Student:
             self.cost=20000
         def show(self):
             print(self.brand,self.cpu,self.cost)
-   
 s1=Student('pooja',2)
 s2=Student('shree',3)
 s1.show()
+
+#Inheritance
+**sigle inheritance**
+class A:
+    def feature1(self):
+        print('feature1')
+        
+    def feature2(self):
+        print('feature2')
+class B(A):
+    def feature3(self):
+        print('feature3')
+        
+    def feature4(self):
+        print('feature4')
+
+b1=B()
+b1.feature1()
+b1.feature2()
+b1.feature3()
+b1.feature4()
+
+**Multilevel inheritance**
+class A:
+    def feature1(self):
+        print('feature1')
+        
+    def feature2(self):
+        print('feature2')
+class B(A):
+    def feature3(self):
+        print('feature3')
+        
+    def feature4(self):
+        print('feature4')
+class C(B):
+    def feature5(self):
+        print('feature5')
+
+c1=C()
+c1.feature1()
+c1.feature2()
+c1.feature3()
+c1.feature4()
+c1.feature5()
+
+**multiple inheritance**
+class A:
+    def feature1(self):
+        print('feature1')
+        
+    def feature2(self):
+        print('feature2')
+class B():
+    def feature3(self):
+        print('feature3')
+        
+    def feature4(self):
+        print('feature4')
+class C(A,B):
+    def feature5(self):
+        print('feature5')
+
+c1=C()
+c1.feature1()
+c1.feature2()
+c1.feature3()
+c1.feature4()
+c1.feature5()
+
+
+
+
+
+   
+
 
