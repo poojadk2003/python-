@@ -169,4 +169,25 @@ c1.update()
 print(c1.name,c1.age)
 print(c2.name,c2.age)
 
+#using compare for two objects:
+class Computer:
+    def __init__(self):
+        self.name="pooja"
+        self.age=30
+    def compare(self,obj2):
+        if self.age==obj2.age:
+            return true
+        else:
+            return false
+obj1=Computer()
+obj2=Computer()
+obj1.age=45
+if obj1==obj2:
+    print('they r same')
+else:
+    print('they r diff')
+    
+print(obj1.age)
+print(obj2.age)
+
 
