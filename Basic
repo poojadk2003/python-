@@ -230,3 +230,25 @@ print(s1.avg())
 print(s2.avg())
 print(Student.info())
 Student.sink()
+
+#using inner class:
+class Student:
+    def __init__(self,name,roll):
+        self.name=name
+        self.roll=roll
+        self.lap=self.laptop()
+    def show(self):
+         print(self.name,self.roll)
+         self.lap.show()
+    class laptop:
+        def __init__(self):
+            self.brand='hp'
+            self.cpu='i5'
+            self.cost=20000
+        def show(self):
+            print(self.brand,self.cpu,self.cost)
+   
+s1=Student('pooja',2)
+s2=Student('shree',3)
+s1.show()
+
