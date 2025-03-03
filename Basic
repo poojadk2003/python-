@@ -409,6 +409,21 @@ class Top:
 values=Top()
 for i in values:
     print(i)
+
+#using Generator:
+
+
+def topten():
+    n=1
+    while(n<=10):
+        m=n*n
+        yield m
+        n+=1
+values=topten()
+for i in values:
+    print(i)
+
+
         
 
 
