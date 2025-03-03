@@ -423,6 +423,23 @@ values=topten()
 for i in values:
     print(i)
 
+#using exception handling:
+a=5
+b=2
+try:
+    print('resorce opened')
+    print(a/b)
+    k=int(input("enter a num:"))
+    print(k)
+except ZeroDivisionError as e:
+    print('cannot divide a num by 0',e)
+except ValueError as e:
+    print('input invalid')
+except Exception as e:
+    print('somthing went wrong')
+finally:
+    print('resource closed')
+
 
         
 
