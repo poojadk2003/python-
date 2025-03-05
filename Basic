@@ -490,6 +490,23 @@ else:
     print('not found')
 
 
+#using for loop:
+pos=-1
+def search(lst,n):
+    i=0
+    for i in range(len(lst)):
+        if lst[i]==n:
+            globals()['pos']=i
+            return True
+     
+    return False
+lst=[5,8,4,6,9,2]
+n=9
+if search(lst,n):
+    print('found',pos+1)
+else:
+    print('not found')
+
 
         
 
