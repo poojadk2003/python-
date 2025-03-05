@@ -464,8 +464,31 @@ t2.start()
 t1.join()
 t2.join()
 print('bye')
-            
-            
+
+#comments:
+# is used tocomment for every line
+'''   ''' is also used only for documnetation purpose
+
+#python is both compiled and interpreted lang
+source-code->compiled->byte-code->interpreter(using python virtual machine)->machine lang
+
+#linear search in python:
+pos=-1
+def search(lst,n):
+    i=0
+    while i<len(lst):
+        if lst[i]==n:
+            globals()['pos']=i
+            return True
+        i=i+1
+    return False
+lst=[5,8,4,6,9,2]
+n=9
+if search(lst,n):
+    print('found',pos+1)
+else:
+    print('not found')
+
 
 
         
