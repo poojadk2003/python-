@@ -542,6 +542,28 @@ def sort(nums):
 nums=[5,3,8,6,7,2]
 sort(nums)
 print(nums)
+
+#using inheritance:
+class A:
+    def __init__(self):
+        self.name='pooja'
+        self.age=20
+        print(f'name={self.name},age={self.age}')
+    def rack(self):
+        print('rack is full')
+class B(A):
+    
+    def __init__(self):
+        super().__init__()
+        self.name='kiran'
+        self.salary=20000
+        print(f'name={self.name},salary={self.salary}')
+    def rack1(self):
+        print('Stack is not full')
+b1=B()
+b1.rack()
+b1.rack1()
+
         
 
 
