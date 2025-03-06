@@ -578,6 +578,12 @@ def sort(nums):
 nums=[5,3,8,6,7,2]
 sort(nums)
 print(nums)
+
+#Zipping the two lines:
+names=("pooja","shree","sneha")
+coms=('dell','acmegrade','techno')
+z=list(zip(names,coms))
+print(z)
         
 
 
